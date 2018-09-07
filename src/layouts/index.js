@@ -29,23 +29,23 @@ Layout.propTypes = {
 
 export default Layout
 
-export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-        description
-        keywords
-      }
-    }
-    allContentfulLink(sort: { fields: [createdAt], order: ASC }) {
-      edges {
-        node {
-          title
-          url
-          createdAt
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query SiteTitleQuery {
+//     site {
+//       siteMetadata {
+//         title
+//         description
+//         keywords
+//       }
+//     }
+//     allContentfulLink(sort: { fields: [createdAt], order: ASC }) {
+//       edges {
+//         node {
+//           title
+//           url
+//           createdAt
+//         }
+//       }
+//     }
+//   }
+// `
